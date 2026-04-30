@@ -1,0 +1,16 @@
+{% extends "auctions/layout.html" %} <!--It takes the entire layout from layout.html and only changes the core content-->
+
+{% block body %}
+    <h2>Create Listing</h2>
+
+    <form action="{% url 'create_listing' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="title" placeholder="Title" required><br><br>
+        <textarea name="description" placeholder="Description" required></textarea><br><br>
+        <input type="number" name="starting_price" placeholder="Starting Price" step="0.01" required><br><br>
+        <input type="url" name="image_url" placeholder="Image URL"><br><br>
+        <input type="text" name="category" placeholder="Category"><br><br>
+        
+        <button type="submit">Create</button>
+    </form>
+{% endblock %}
