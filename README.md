@@ -1,0 +1,2 @@
+# CS50-s-Web-Programming-with-Python-and-JavaScript
+Development path in Harvard's CS50 course, contains computer science fundamentals and full-stack web programming, robust solutions created with C, Python (Django), SQL and JavaScript, focusing on algorithmic efficiency, secure software engineering and scalable web architecture, from low-level memory management to complex dynamic web applications.
